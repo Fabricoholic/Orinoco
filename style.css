@@ -1,8 +1,6 @@
 /* GENERAL */
 body {
     margin : 0;
-    /* background: radial-gradient(#623f5b, #120717); */
-};
 }
 a {
     text-decoration: none;
@@ -10,10 +8,6 @@ a {
 
 h1 {
     font-family: 'Lora', serif;
-}
-
-p {
-    margin : 5px;
 }
 
 /* HEADER */
@@ -56,41 +50,10 @@ nav a:first-child {
 main {
     /* width : 80%; */
     margin: 60px 10%;
-    display:flex;
+
+    text-align: justify;
+
 }
-
-article {
-    width : 300px;
-    background: rgba(109, 100, 130, 0.7)
-}
-
-
-.img-miniature {
-    position: relative;
-    display: inline-block;
-    border: 1px solid black;
-}
-
-article img {
-    width : 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.img-miniature:hover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height : 100%;
-    background: rgba(109, 100, 130, 0.7);
-}
-
-article h2 {
-    margin: 5px 0px;
-}
-
 
 /* FOOTER */
 
@@ -103,92 +66,3 @@ footer {
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-
-  
-/* * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-  }
-  *:before, *:after {
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    background: radial-gradient(#003, #000);
-    overflow: hidden;
-    color: #fff;
-    font-family: 'Open Sans';
-    font-size: 18px;
-  }
-   */
-
-   body {
-       position: relative;
-   }
-  h1 {
-    font-weight: 700;
-    margin-bottom: 0.5em;
-  }
-  main {
-      position: relative;
-  }
-  .box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    max-width: 600px;
-    padding: 5px;
-    border: 2px solid #b78846;
-  }
-  .box:before, .box:after {
-    content: "•";
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    font-size: 14px;
-    color: #b78846;
-    border: 2px solid #b78846;
-    line-height: 12px;
-    top: 5px;
-    text-align: center;
-  }
-  .box:before {
-    left: 5px;
-  }
-  .box:after {
-    right: 5px;
-  }
-  .box .box-inner {
-    position: relative;
-    border: 2px solid #b78846;
-    padding: 40px;
-  }
-  .box .box-inner:before, .box .box-inner:after {
-    content: "•";
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    font-size: 14px;
-    color: #b78846;
-    border: 2px solid #b78846;
-    line-height: 12px;
-    bottom: -2px;
-    text-align: center;
-  }
-  .box .box-inner:before {
-    left: -2px;
-  }
-  .box .box-inner:after {
-    right: -2px;
-  }
-  
