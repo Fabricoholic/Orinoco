@@ -1,6 +1,7 @@
 /* GENERAL */
 body {
     margin : 0;
+    background-color: #e5e5e5;
 }
 a {
     text-decoration: none;
@@ -8,6 +9,14 @@ a {
 
 h1 {
     font-family: 'Lora', serif;
+}
+
+h2 {
+    margin: 5px;
+}
+
+p{
+    margin: 3px;
 }
 
 /* HEADER */
@@ -30,6 +39,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    z-index: 1;
 }
 
 nav a {
@@ -48,12 +59,73 @@ nav a:first-child {
 /* MAIN */
 
 main {
-    /* width : 80%; */
-    margin: 60px 10%;
-
+    display : flex;
+    margin : 30px 30px;
+    flex-wrap : wrap;
+    justify-content: space-around;
     text-align: justify;
-
 }
+
+
+/* ARTICLE */
+
+article {
+    width: 260px;
+    border: 3px solid #b78846;
+    box-sizing: border-box;
+    position: relative;
+    padding: 5px;
+    margin: 30px;
+}
+    /* CADRE EFFET RETRO */
+article::before, article::after, .inner-article::before, .inner-article::after {
+    content: "•";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    color: #b78846;
+    border: 2px solid #b78846;
+    line-height: 16px;
+  
+    text-align: center;
+}
+
+article::before {
+    left: 5px;
+    top: 5px;
+   }
+article::after {
+    right: 5px;
+    top: 5px;
+ }
+
+ .inner-article {
+    border: 3px solid #b78846;
+    box-sizing: border-box;
+    position: relative;
+    padding: 20px;
+ }
+
+ .inner-article::before {
+    bottom: -2px;
+    left: -2px;
+ }
+
+ .inner-article::after {
+    bottom: -2px;
+    right: -2px;
+ }
+
+img {
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 6px solid #b78846;
+    border-bottom: 6px solid #b78846;
+    border-left: #242229 1px solid;
+    border-right: #242229 1px solid;
+}
+
 
 /* FOOTER */
 
